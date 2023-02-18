@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Components/Navbar/Navbar";
+import Main from "./Components/Main/Main";
+import React from 'react';
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    const [mode, setMode] = React.useState(false);
+
+    function handleClick(){
+        console.log("changed");
+        setMode( mode => !mode);
+    }
+    
+    return (
+        <div className={`app ${mode ? "darkApp": "lightApp"}`}>
+            <Navbar mode={mode} click={handleClick}/>
+            <Main/>
+        </div>  
+    )
 }
-
-export default App;

@@ -1,0 +1,42 @@
+
+
+
+.bgIcon{
+    opacity: .04;
+    float: right;
+    width: 1000px;
+    display: inline;
+    padding-left: 55rem;
+}
+
+.main {
+
+    font-size: 25px;
+    padding: 57px 27px;
+    /* color: white; */
+    background-image: url('../../Photos/grey-react-logo.png');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: 140% 75%;
+    
+}
+
+ul {
+    margin-top: 46px;
+    padding-left: 1.5rem;
+}
+
+li::marker{
+    /* color: #61DAFB; */
+    font-size: 1.4rem;
+}
+
+li{
+    margin: 1.5rem;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 39px; 
+    letter-spacing: -.05em;
+}

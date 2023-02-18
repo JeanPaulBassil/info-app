@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    align-items: center;
+    /* padding: rem;  */
+    padding: 30px 25px;   
+    height: 90px;
+    font-family: Inter, sans-serif;
+    justify-content: center;
+    box-shadow: 0px 1px 0px 0px   rgba(0, 0, 0, 0.1);
+}
+
+.darkNav {
+    background-color: #21222a;
+}
+.light1 {
+    color: #918E9B;
+}
+
+.light2 {
+    color: #2b283a;    
+}
+
+.dark2 {
+    color: #D5D4D8;
+}
+.on-off {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: auto;
+    color: #61DAFB;
+}
+
+img {
+    margin-right: 7px;
+    width: 30px;
+}
+
+h4 {
+    color: #DEEBF8;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+
+/* Hide the checkbox */
+.toggle input {
+    display: none;
+  }
+
+.toggle {
+    margin: .5rem;    
+}  
+
+  /* Style the slider */
+  .toggle .slider {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .darkToggle .slider{
+    background-color: #d3d3d3;
+  }
+
+  .lightToggle .slider{
+    background-color: #2b283a;
+  }
+
+  .toggle .slider:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  
+  /* Move the slider circle to the right when the checkbox is checked */
+  .toggle input:checked + .slider:before {
+    transform: translateX(105%);
+  }
+  
+  /* Change the slider background color when the checkbox is checked */
+  /* .toggle input:checked + .slider {
+    background-color: #61dafb;
+  } */
+  
